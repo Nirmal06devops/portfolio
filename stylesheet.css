@@ -229,6 +229,7 @@ section { padding: clamp(64px, 10vw, 110px) var(--gutter); }
 
 .home-img img,
 .about-img img {
+    height: auto;
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 50%;
