@@ -4,454 +4,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="V B Nirmal - Frontend Developer portfolio">
+    <meta name="theme-color" content="#0a1120">
     <title>Portfolio</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>document.documentElement.classList.add('js');</script>
 
-    <!-- Boxicons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Main CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
 
-    <!-- Typed.js -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Header -->
     <header class="header">
+        <a href="#home" class="logo">Portfolio</a>
 
-        <a href="#" class="logo">Portfolio</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navbar">
+            <i class='bx bx-menu'></i>
+        </button>
 
-        <nav class="navbar">
-
-            <a href="#home" style="--i:1">Home</a>
-
-            <a href="#about" style="--i:2">About</a>
-
-            <a href="#skills" style="--i:3">Skills</a>
-
-            <a href="#projects" style="--i:4">Projects</a>
-
-            <a href="#contact" style="--i:5">Contact</a>
-
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
-
     </header>
 
-    <!-- Home Section -->
-    <section class="home" id="home">
+    <main>
 
-        <div class="home-content">
+        <!-- HOME -->
+        <section class="home" id="home">
 
-            <h3>Hello, It's Me</h3>
+            <div class="home-content">
+                <h1>Hi, I'm V B Nirmal</h1>
 
-            <h1>V B Nirmal</h1>
+                <p class="role">I'm a <span class="typing-text"></span></p>
 
-            <h4>
-                And I'm a
-                <span class="typing-text"></span>
-            </h4>
-
-            <p>
-                Frontend Developer fresher with knowledge in
-                Java, HTML, CSS, and JavaScript.
-            </p>
-
-            <!-- Social Icons -->
-            <div class="home-nr">
-
-                <a href="#">
-                    <i class='bx bxl-whatsapp'></i>
-                </a>
-
-                <a href="#">
-                    <i class='bx bxl-github'></i>
-                </a>
-
-                <a href="#">
-                    <i class='bx bxl-linkedin'></i>
-                </a>
-
-                <a href="#">
-                    <i class='bx bxl-instagram'></i>
-                </a>
-
-            </div>
-
-            <a href="#" class="btn-box">
-                More About Me
-            </a>
-
-        </div>
-
-        <!-- Home Image -->
-        <div class="home-img">
-
-            <img src="./Images/profile-imge.png" alt="V B Nirmal Profile Photo">
-
-        </div>
-
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-
-        <div class="about-img">
-
-            <img src="./Images/profile-imge.png" alt="About V B Nirmal">
-
-        </div>
-
-        <div class="about-text">
-
-            <h2>
-                About <span>Me</span>
-            </h2>
-
-            <h4>Frontend Developer!</h4>
-
-            <p>
-                Frontend Developer fresher with knowledge in Java,
-                HTML, CSS, and JavaScript.
-
-                Passionate about creating responsive and modern
-                web applications with clean UI and interactive
-                user experience.
-
-                Quick learner, self-motivated, and eager to grow
-                in the software development field.
-            </p>
-
-            <a href="#" class="btn-box">
-                More About Me
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-
-        <h1 class="sub-title">
-            My <span>Skills</span>
-        </h1>
-
-        <div class="skills-container">
-
-            <!-- HTML -->
-            <div class="skill-card">
-
-                <div class="outer">
-
-                    <div class="inner">
-                        <h2>90%</h2>
-                    </div>
-
-                </div>
-
-                <h3>HTML</h3>
-
-            </div>
-
-            <!-- CSS -->
-            <div class="skill-card">
-
-                <div class="outer">
-
-                    <div class="inner">
-                        <h2>85%</h2>
-                    </div>
-
-                </div>
-
-                <h3>CSS</h3>
-
-            </div>
-
-            <!-- JavaScript -->
-            <div class="skill-card">
-
-                <div class="outer">
-
-                    <div class="inner">
-                        <h2>50%</h2>
-                    </div>
-
-                </div>
-
-                <h3>JavaScript</h3>
-
-            </div>
-
-            <!-- Java -->
-            <div class="skill-card">
-
-                <div class="outer">
-
-                    <div class="inner">
-                        <h2>65%</h2>
-                    </div>
-
-                </div>
-
-                <h3>Java</h3>
-
-            </div>
-
-            <!-- React -->
-            <div class="skill-card">
-
-                <div class="outer">
-
-                    <div class="inner">
-                        <h2>55%</h2>
-                    </div>
-
-                </div>
-
-                <h3>React</h3>
-
-            </div>
-
-            <!-- GitHub -->
-            <div class="skill-card">
-
-                <div class="outer">
-
-                    <div class="inner">
-                        <h2>85%</h2>
-                    </div>
-
-                </div>
-
-                <h3>GitHub</h3>
-
-            </div>
-
-        </div>
-    </section>
-    <!-- PROJECTS SECTION -->
-
-    <section id="projects">
-
-        <h1 class="section-title">My Projects</h1>
-
-        <div class="projects-container">
-
-            <!-- PROJECT 1 -->
-            <div class="project-card">
-
-                <img src="./Images/whatsapp-agent.png" alt="WhatsApp AI Agent">
-
-                <div class="project-content">
-
-                    <h2>AI WhatsApp Agent</h2>
-
-                    <p>
-                        Intelligent WhatsApp AI assistant capable of automated replies,
-                        smart conversations and customer interaction using AI APIs.
-                    </p>
-
-                    <div class="tech-stack">
-                        <span>Python</span>
-                        <span>Flask</span>
-                        <span>OpenAI API</span>
-                        <span>WhatsApp API</span>
-                    </div>
-
-                    <div class="project-buttons">
-                        <a href="#">Live Demo</a>
-                        <a href="#">GitHub</a>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- PROJECT 2 -->
-            <div class="project-card">
-
-                <img src="./Images/Rag-model.png" alt="RAG Chatbot">
-
-                <div class="project-content">
-
-                    <h2>RAG Chatbot Model</h2>
-
-                    <p>
-                        AI chatbot using Retrieval-Augmented Generation for smart
-                        document-based question answering and semantic search.
-                    </p>
-
-                    <div class="tech-stack">
-                        <span>LangChain</span>
-                        <span>Python</span>
-                        <span>LLM</span>
-                        <span>Vector DB</span>
-                    </div>
-
-                    <div class="project-buttons">
-                        <a href="#">Live Demo</a>
-                        <a href="#">GitHub</a>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- PROJECT 3 -->
-            <div class="project-card">
-
-                <img src="./Images/valentine-website.png" alt="Valentines Website">
-
-                <div class="project-content">
-
-                    <h2>Valentine's Day Website</h2>
-
-                    <p>
-                        Romantic interactive website with smooth animations,
-                        love effects and responsive modern UI design.
-                    </p>
-
-                    <div class="tech-stack">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                    <div class="project-buttons">
-                        <a href="#">Live Demo</a>
-                        <a href="#">GitHub</a>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- PROJECT 4 -->
-            <div class="project-card">
-
-                <img src="./Images/portfolio-Assist.png" alt="AI Portfolio Assistant">
-
-                <div class="project-content">
-
-                    <h2>AI Portfolio Assistant</h2>
-
-                    <p>
-                        AI-powered portfolio assistant chatbot that introduces profile,
-                        skills and projects with smart interaction support.
-                    </p>
-
-                    <div class="tech-stack">
-                        <span>JavaScript</span>
-                        <span>OpenAI API</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                    </div>
-
-                    <div class="project-buttons">
-                        <a href="#">Live Demo</a>
-                        <a href="#">GitHub</a>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= CONTACT SECTION ================= -->
-
-    <section class="contact" id="contact">
-
-        <h2 class="contact-title">Contact <span>Me</span></h2>
-
-        <div class="contact-container">
-
-            <!-- LEFT SIDE -->
-
-            <div class="contact-info">
-
-                <h3>Let's Work Together</h3>
-
-                <p>
-                    Feel free to contact me for web development,
-                    AI projects and collaborations.
+                <p class="lead">
+                    Frontend Developer fresher with knowledge in Java, HTML, CSS and
+                    JavaScript. I build responsive web apps and AI chatbots with a
+                    clean UI.
                 </p>
 
-                <div class="contact-details">
+                <div class="hero-actions">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#contact" class="btn btn-ghost">Contact Me</a>
+                </div>
+
+                <!-- TODO: replace each "#" with your real profile link -->
+                <div class="social">
+                    <a href="#" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+
+            <div class="home-img">
+                <img src="./Images/profile-imge.png" alt="V B Nirmal profile photo" width="340" height="340">
+            </div>
+
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+
+            <div class="about-img reveal">
+                <img src="./Images/profile-imge.png" alt="V B Nirmal" width="300" height="300" loading="lazy">
+            </div>
+
+            <div class="about-text reveal">
+                <h2 class="section-heading">About me</h2>
+
+                <p>
+                    Frontend Developer fresher with knowledge in Java, HTML, CSS and
+                    JavaScript.
+                </p>
+                <p>
+                    I'm passionate about creating responsive and modern web
+                    applications with a clean UI and an interactive user experience.
+                    Quick learner, self-motivated and eager to grow in software
+                    development.
+                </p>
+
+                <a href="#contact" class="btn">Get in touch</a>
+            </div>
+
+        </section>
+
+        <!-- SKILLS -->
+        <section class="skills" id="skills">
+
+            <h2 class="section-heading reveal">Skills</h2>
+
+            <div class="skills-container">
+
+                <div class="skill reveal" style="--v:90">
+                    <div class="skill-top"><span>HTML</span><span>90%</span></div>
+                    <div class="meter"><span class="fill"></span></div>
+                </div>
+
+                <div class="skill reveal" style="--v:85">
+                    <div class="skill-top"><span>CSS</span><span>85%</span></div>
+                    <div class="meter"><span class="fill"></span></div>
+                </div>
+
+                <div class="skill reveal" style="--v:50">
+                    <div class="skill-top"><span>JavaScript</span><span>50%</span></div>
+                    <div class="meter"><span class="fill"></span></div>
+                </div>
+
+                <div class="skill reveal" style="--v:65">
+                    <div class="skill-top"><span>Java</span><span>65%</span></div>
+                    <div class="meter"><span class="fill"></span></div>
+                </div>
+
+                <div class="skill reveal" style="--v:55">
+                    <div class="skill-top"><span>React</span><span>55%</span></div>
+                    <div class="meter"><span class="fill"></span></div>
+                </div>
+
+                <div class="skill reveal" style="--v:85">
+                    <div class="skill-top"><span>GitHub</span><span>85%</span></div>
+                    <div class="meter"><span class="fill"></span></div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects" id="projects">
+
+            <h2 class="section-heading reveal">Projects</h2>
+
+            <div class="projects-container">
+
+                <article class="project-card reveal">
+                    <img src="./Images/whatsapp-agent.png" alt="AI WhatsApp Agent" loading="lazy">
+                    <div class="project-content">
+                        <h3>AI WhatsApp Agent</h3>
+                        <p>
+                            WhatsApp AI assistant with automated replies, smart
+                            conversations and customer interaction using AI APIs.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>Flask</span><span>OpenAI API</span><span>WhatsApp API</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="primary">Live Demo</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <img src="./Images/Rag-model.png" alt="RAG Chatbot" loading="lazy">
+                    <div class="project-content">
+                        <h3>RAG Chatbot Model</h3>
+                        <p>
+                            Chatbot using Retrieval-Augmented Generation for
+                            document-based question answering and semantic search.
+                        </p>
+                        <div class="tech-stack">
+                            <span>LangChain</span><span>Python</span><span>LLM</span><span>Vector DB</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="primary">Live Demo</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <img src="./Images/valentine-website.png" alt="Valentine's Day website" loading="lazy">
+                    <div class="project-content">
+                        <h3>Valentine's Day Website</h3>
+                        <p>
+                            Interactive website with smooth animations, love effects
+                            and a responsive modern UI.
+                        </p>
+                        <div class="tech-stack">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="primary">Live Demo</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <img src="./Images/portfolio-Assist.png" alt="AI Portfolio Assistant" loading="lazy">
+                    <div class="project-content">
+                        <h3>AI Portfolio Assistant</h3>
+                        <p>
+                            Portfolio chatbot that introduces my profile, skills and
+                            projects through smart interaction.
+                        </p>
+                        <div class="tech-stack">
+                            <span>JavaScript</span><span>OpenAI API</span><span>HTML</span><span>CSS</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="primary">Live Demo</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+
+            <h2 class="section-heading reveal">Contact</h2>
+
+            <div class="contact-container">
+
+                <div class="contact-info reveal">
+
+                    <h3>Let's work together</h3>
 
                     <p>
-                        <i class='bx bxs-envelope'></i>
-                        nirmal@gmail.com
+                        Open to web development roles, AI projects and
+                        collaborations. Send me a message and I'll reply soon.
                     </p>
 
-                    <p>
-                        <i class='bx bxs-phone'></i>
-                        +91 9876543210
-                    </p>
-
-                    <p>
-                        <i class='bx bxs-map'></i>
-                        Chennai, India
-                    </p>
+                    <!-- TODO: replace with your real email / phone / city -->
+                    <div class="contact-details">
+                        <p><i class='bx bxs-envelope'></i><a href="mailto:nirmal@gmail.com">nirmal@gmail.com</a></p>
+                        <p><i class='bx bxs-phone'></i><a href="tel:+919876543210">+91 9876543210</a></p>
+                        <p><i class='bx bxs-map'></i>Chennai, India</p>
+                    </div>
 
                 </div>
 
-                <!-- SOCIAL ICONS -->
-
-                <div class="contact-social">
-
-                    <a href="#">
-                        <i class='bx bxl-instagram'></i>
-                    </a>
-
-                    <a href="#">
-                        <i class='bx bxl-linkedin'></i>
-                    </a>
-
-                    <a href="#">
-                        <i class='bx bxl-github'></i>
-                    </a>
-
-                    <a href="#">
-                        <i class='bx bxl-whatsapp'></i>
-                    </a>
-
+                <div class="contact-form reveal">
+                    <form id="contactForm">
+                        <input type="text" name="name" placeholder="Your name" aria-label="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" aria-label="Your email" required>
+                        <input type="text" name="subject" placeholder="Subject" aria-label="Subject">
+                        <textarea name="message" rows="6" placeholder="Your message" aria-label="Your message" required></textarea>
+                        <button type="submit">Send message</button>
+                        <p class="form-status" id="formStatus" role="status"></p>
+                    </form>
                 </div>
 
             </div>
 
-            <!-- RIGHT SIDE -->
+        </section>
 
-            <div class="contact-form">
+    </main>
 
-                <form action="#">
+    <footer class="footer">
+        <p>&copy; 2026 V B Nirmal</p>
+    </footer>
 
-                    <input type="text" placeholder="Your Name" required>
+    <button id="topBtn" class="top-btn" aria-label="Back to top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
 
-                    <input type="email" placeholder="Your Email" required>
-
-                    <input type="text" placeholder="Subject">
-
-                    <textarea rows="6" placeholder="Your Message"></textarea>
-
-                    <button type="submit">
-                        Send Message
-                    </button>
-
-                </form>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Main JS -->
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 
 </body>
 
